@@ -791,7 +791,7 @@ public class RunningActivity extends AppCompatActivity implements FragmentParame
             fos.close();
         }
         catch (Exception ex) {
-            Log.i("FILE", "Problem saving picture", ex);
+
             picturePath = "";
         }
 
