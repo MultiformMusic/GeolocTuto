@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background_activity">
+
+    <!--
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/toolbar_jogger">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_title"
+            android:textColor="@color/gold"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_activity"
+        android:layout_marginTop="10dp"
+        android:id="@+id/runningLigneUn">
+
+        <FrameLayout
+            android:id="@+id/parameter_container"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"/>
+
+
+        <FrameLayout
+            android:id="@+id/chronometer_container"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="10dp"
+        android:background="#ffffff"
+        card_view:cardBackgroundColor="#8c4116"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/runningLigneUn">
+
+        <FrameLayout
+            android:id="@+id/map_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background_cardview"
+            android:layout_margin="3dp"
+            android:padding="3dp"/>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

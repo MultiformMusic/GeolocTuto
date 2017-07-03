@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="10dp"
+    android:background="#ffffff"
+    card_view:cardBackgroundColor="@color/background_cardview"
+    android:layout_margin="0dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@drawable/pics_engrenages"
+        android:layout_margin="3dp">
+
+        <!-- CONFIGURATION COURSE -->
+
+        <TextView
+            android:id="@+id/textViewRunningTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_running_title"
+            android:textColor="@color/gold"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/textViewRunningName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_running_name"
+            android:textColor="@color/cyan"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/textViewRunningTitle"/>
+
+        <EditText
+            android:id="@+id/editRunningName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/textViewRunningName"/>
+
+
+        <TextView
+            android:id="@+id/textViewRunningProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_running_type"
+            android:textColor="@color/cyan"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/editRunningName"/>
+
+        <Spinner
+            android:id="@+id/spinnerActivity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/listActivitiesNames"
+            android:layout_below="@+id/editRunningName"
+            android:background="@drawable/shape_spinner_normal_profil"
+            android:paddingRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="5dp"/>
+
+
+
+        <!-- CONFIGURATION NOTIFICATION -->
+
+        <TextView
+            android:id="@+id/textViewNotificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_notification_title"
+            android:textColor="@color/gold"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/spinnerActivity"/>
+
+        <TextView
+            android:id="@+id/textViewNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_notification_volume"
+            android:textColor="@color/cyan"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textViewNotificationTitle"/>
+
+        <SeekBar
+            android:id="@+id/seekBarNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewNotification"
+            android:layout_marginTop="5dp" />
+
+        <CheckBox
+            android:id="@+id/checkNotificationDuringRunning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_notification_during_running"
+            android:textColor="@color/cyan"
+            android:layout_below="@+id/seekBarNotification"
+            android:buttonTint="@color/gold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <CheckBox
+            android:id="@+id/checkNotificationEndRunning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_notification_end_running"
+            android:textColor="@color/cyan"
+            android:layout_below="@+id/checkNotificationDuringRunning"
+            android:buttonTint="@color/gold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_notification_delay"
+            android:textColor="@color/cyan"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/checkNotificationEndRunning"
+            android:layout_marginLeft="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/listDelaysNotifications"
+            android:layout_below="@+id/checkNotificationEndRunning"
+            android:background="@drawable/shape_spinner_normal_delay"
+            android:paddingRight="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="50dp"/>
+
+
+        <!-- SIMULATION -->
+
+        <CheckBox
+            android:id="@+id/checkSimulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/cyan"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="140dp"
+            android:buttonTint="@color/gold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

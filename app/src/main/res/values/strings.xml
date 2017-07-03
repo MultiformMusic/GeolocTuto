@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">GeolocTuto</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="toolbar_title">Help Me Run !! </string>
+
+    <string name="home_title">Select an action with \nbuttons below</string>
+    <string name="home_new_run">New run</string>
+    <string name="home_statistics">Statistics</string>
+    <string name="home_parameter">Parameters</string>
+
+    <string name="running_calibration">Waiting for your location</string>
+    <string name="running_toast_save">Running saved</string>
+    <string name="running_toast_save_error">ATTENTION : problem, Running not saved, sorry.</string>
+    <string name="running_toast_start">Running started</string>
+    <string name="running_toast_pause">Running paused</string>
+
+
+    <!-- PARAMETRAGE DES UNITES-->
+    <string name="settings_title">Settings</string>
+    <string name="settings_units">Units</string>
+
+    <!-- vitesse -->
+    <string name="settings_units_velocity">Velocity</string>
+    <string name="settings_units_velocity_summary">Choose the units for velocity</string>
+
+    <!-- distance -->
+    <string name="settings_units_distance">Distance</string>
+    <string name="settings_units_distance_summary">Choose the units for distance</string>
+    <string name="settings_units_distance_meter">m (meter)</string>
+
+    <!-- altitude -->
+    <string name="settings_units_elevation">Elevation</string>
+    <string name="settings_units_elevation_summary">Choose the units for elevation</string>
+    <string name="settings_units_elevation_meter">m (meter)</string>
+
+    <!-- taille -->
+    <string name="settings_units_height">Height</string>
+    <string name="settings_units_height_summary">Choose the units for height</string>
+    <string name="settings_units_height_centimeter">centimeter</string>
+    <string name="settings_units_height_inch">inch</string>
+
+    <!-- poids -->
+    <string name="settings_units_weight">Weight</string>
+    <string name="settings_units_weight_summary">Choose the units for weight</string>
+    <string name="settings_units_weight_kilos">kilo</string>
+    <string name="settings_units_weight_livre">pound</string>
+
+    <!-- paramétrage running -->
+    <string name="settings_general">General</string>
+    <string name="settings_general_maps">Maps</string>
+    <string name="settings_general_maps_summary">Map\'s screen mode</string>
+
+    <string name="settings_running_title">Activity\'s Paramaters</string>
+    <string name="settings_running_name">Place name : </string>
+    <string name="settings_running_type">Type : </string>
+    <string name="settings_running_default">Default name</string>
+
+    <string name="settings_notification_title">Notification\'s parameters</string>
+    <string name="settings_notification_test">Notification level test</string>
+    <string name="settings_notification_volume">Notification level</string>
+    <string name="settings_notification_during_running">Notifications during running</string>
+    <string name="settings_notification_end_running">Notification end running</string>
+    <string name="settings_notification_delay">Delay </string>
+
+    <!-- pop up ajout commentaire -->
+    <string name="dialog_comment_title">Add a comment</string>
+    <string name="dialog_comment_description">With this screen you can add a comment to your running (or add it later).</string>
+    <string name="dialog_comment_add">Add</string>
+    <string name="dialog_comment_add_ok">Comment was added</string>
+    <string name="dialog_comment_add_error">Failed to add comment</string>
+    <string name="dialog_comment_cancel">Cancel</string>
+
+    <!-- Phrase notification -->
+    <string name="notification_template">Vitesse {0} Distance {1} Temps {2}</string>
+    <string name="notification_velocity_km_hour">kilometers per hour</string>
+    <string name="notification_velocity_min_km">minutes per kilometer</string>
+    <string name="notification_velocity_miles_hour">miles per hour</string>
+    <string name="notification_velocity_min_mille">minutes per mile</string>
+
+    <string name="notification_distance_kilometer">kilometers</string>
+    <string name="notification_distance_meter">meters</string>
+    <string name="notification_distance_yard">yards</string>
+    <string name="notification_distance_mile">miles</string>
+
+    <string name="notification_time_minute">minutes</string>
+    <string name="notification_time_second">seconds</string>
+    <string name="notification_time_hour">hours</string>
+
+    <string name="notification_intro">notification</string>
+    <string name="notification_velocity">velocity</string>
+    <string name="notification_distance">distance</string>
+    <string name="notification_time">time</string>
+
+    <!-- HOME PERFORMANCE PRECEDENTE -->
+    <string name="home_last_performance_title">Last activity</string>
+    <string name="home_last_performance_no_perf">No last activity to see, waiting for your first !!</string>
+
+</resources>

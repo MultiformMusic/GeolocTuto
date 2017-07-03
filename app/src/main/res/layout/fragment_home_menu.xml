@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8c4116"
+    android:padding="5dp" >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="10dp"
+        android:background="#e5b4ae"
+        card_view:cardBackgroundColor="@color/background_cardview">
+
+        <ImageView
+            android:id="@+id/imageHomeShoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_shoes"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="15sp"
+            android:textColor="@color/cyan"/>
+
+
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_running_circle_size"
+            android:id="@+id/button_new_run"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="10dp"
+            android:background="?android:selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_new_run"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="65dp"
+            android:textSize="15sp"
+            android:textColor="#dad3ff"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_statistic_circle_size"
+            android:id="@+id/button_statistics"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="10dp"
+            android:background="?android:selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_statistics"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="65dp"
+            android:textSize="15sp"
+            android:textColor="#efa97a"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_parameter_circle_size"
+            android:id="@+id/button_parameter"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="10dp"
+            android:background="?android:selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_parameter"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="65dp"
+            android:textSize="15sp"
+            android:textColor="#c1bcbb"/>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

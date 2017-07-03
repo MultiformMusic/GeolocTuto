@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_units"  android:layout="@layout/settings_category_text">
+
+        <ListPreference
+            android:title="@string/settings_units_velocity"
+            android:summary="@string/settings_units_velocity_summary"
+            android:key="unitVelocity"
+            android:defaultValue="km/h"
+            android:entries="@array/listVelocityEntries"
+            android:entryValues="@array/listVelocityValues" />
+
+        <ListPreference
+            android:title="@string/settings_units_distance"
+            android:summary="@string/settings_units_distance_summary"
+            android:key="unitDistance"
+            android:defaultValue="m"
+            android:entries="@array/listDistanceEntries"
+            android:entryValues="@array/listDistanceValues" />
+
+        <ListPreference
+            android:title="@string/settings_units_elevation"
+            android:summary="@string/settings_units_elevation_summary"
+            android:key="unitElevation"
+            android:defaultValue="m"
+            android:entries="@array/listElevationEntries"
+            android:entryValues="@array/listElevationValues" />
+
+        <!--
+        <ListPreference
+            android:title="@string/settings_units_height"
+            android:summary="@string/settings_units_height_summary"
+            android:key="unitHeight"
+            android:defaultValue="m"
+            android:entries="@array/listHeightEntries"
+            android:entryValues="@array/listHeightValues" />
+
+        <ListPreference
+            android:title="@string/settings_units_weight"
+            android:summary="@string/settings_units_weight_summary"
+            android:key="unitWeight"
+            android:defaultValue="m"
+            android:entries="@array/listWeightEntries"
+            android:entryValues="@array/listWeightValues" />
+            -->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_general"  android:layout="@layout/settings_category_text">
+
+        <ListPreference
+            android:title="@string/settings_general_maps"
+            android:summary="@string/settings_general_maps_summary"
+            android:key="mapsType"
+            android:defaultValue="normal"
+            android:entries="@array/listMapsEntries"
+            android:entryValues="@array/listMapsValues" />
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

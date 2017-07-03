@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="10dp"
+    android:background="#ffffff"
+    card_view:cardBackgroundColor="@color/background_cardview"
+    android:layout_margin="0dp">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/pics_chronometer"
+    android:layout_margin="3dp">
+
+    <FrameLayout
+        android:id="@+id/chrono"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp">
+
+        <ImageView android:src="@drawable/clock_dial" android:id="@+id/imgdial"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:contentDescription="" />
+
+        <ImageView android:src="@drawable/clockgoog_minute" android:id="@+id/imgsecond"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:contentDescription="" />
+
+        <ImageView android:src="@drawable/clock_minute" android:id="@+id/imgminute"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:contentDescription="" />
+
+        <ImageView android:src="@drawable/clock_hour" android:id="@+id/imghour"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:contentDescription="" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/simpleChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gold"
+        android:textSize="18sp"
+        android:layout_below="@+id/chrono"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:text="00:00:00"/>
+
+
+    <!-- boutons run -->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_running_circle_size"
+        android:id="@+id/buttonStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_below="@+id/simpleChronometer"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_stop_run"
+        android:id="@+id/buttonStop"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="67dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_below="@+id/simpleChronometer"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_pause_run"
+        android:id="@+id/buttonPause"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="120dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_below="@+id/simpleChronometer"/>
+
+
+    <View
+        android:id="@+id/separation"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/buttonPause"/>
+
+    <!-- VITESSE -->
+    <ImageView
+        android:id="@+id/iconSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_speed_size"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:layout_below="@+id/separation"/>
+
+
+    <TextView
+        android:id="@+id/textVelocityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/redClair"
+        android:textSize="20sp"
+        android:layout_below="@+id/separation"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="17dp"/>
+
+    <TextView
+        android:id="@+id/textVelocityUnity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/redClair"
+        android:layout_below="@+id/separation"
+        android:layout_toEndOf="@+id/textVelocityValue"
+        android:layout_marginTop="24dp"/>
+
+
+    <!-- DISTANCE -->
+    <ImageView
+        android:id="@+id/iconDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_distance_size"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:background="#000000"
+        android:layout_below="@+id/iconSpeed"/>
+
+    <TextView
+        android:id="@+id/textDistanceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gold"
+        android:textSize="20sp"
+        android:layout_below="@+id/iconSpeed"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textDistanceUnity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gold"
+        android:layout_below="@+id/iconSpeed"
+        android:layout_toEndOf="@+id/textDistanceValue"
+        android:layout_marginTop="27dp"/>
+
+
+    <!-- ALTITUDE -->
+    <ImageView
+        android:id="@+id/iconAltitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_altitude_size"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:layout_below="@+id/iconDistance"/>
+
+    <TextView
+        android:id="@+id/textElevationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cyan"
+        android:textSize="20sp"
+        android:layout_below="@+id/iconDistance"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="19dp"/>
+
+    <TextView
+        android:id="@+id/textElevationUnity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cyan"
+        android:layout_below="@+id/iconDistance"
+        android:layout_toEndOf="@+id/textElevationValue"
+        android:layout_marginTop="25dp"/>
+
+    <!--
+    <TextView
+        android:id="@+id/chronoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gold"
+        android:layout_below="@+id/buttonStop"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/elapsedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gold"
+        android:layout_below="@+id/buttonStop"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/derive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gold"
+        android:layout_below="@+id/buttonStop"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"/>
+    -->
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

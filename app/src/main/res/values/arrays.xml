@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- paramétrage unités -->
+    <string-array name="listVelocityEntries">
+        <item>km/h</item>
+        <item>min/km</item>
+        <item>mph</item>
+        <item>min/mph</item>
+    </string-array>
+
+    <string-array name="listVelocityValues">
+        <item>km/h</item>
+        <item>min/km</item>
+        <item>mph</item>
+        <item>min/mph</item>
+    </string-array>
+
+    <string-array name="listDistanceEntries">
+        <item>@string/settings_units_distance_meter</item>
+        <item>km</item>
+        <item>y (yard)</item>
+        <item>mile</item>
+    </string-array>
+
+    <string-array name="listDistanceValues">
+        <item>m</item>
+        <item>km</item>
+        <item>y</item>
+        <item>mile</item>
+    </string-array>
+
+    <string-array name="listElevationEntries">
+        <item>@string/settings_units_elevation_meter</item>
+        <item>km</item>
+        <item>y (yard)</item>
+        <item>mille</item>
+    </string-array>
+
+    <string-array name="listElevationValues">
+        <item>m</item>
+        <item>km</item>
+        <item>y</item>
+        <item>mille</item>
+    </string-array>
+
+
+    <string-array name="listHeightEntries">
+        <item>@string/settings_units_height_centimeter</item>
+        <item>@string/settings_units_height_inch</item>
+    </string-array>
+
+    <string-array name="listHeightValues">
+        <item>cm</item>
+        <item>inch</item>
+    </string-array>
+
+    <string-array name="listWeightEntries">
+        <item>@string/settings_units_weight_kilos</item>
+        <item>@string/settings_units_weight_livre</item>
+    </string-array>
+
+    <string-array name="listWeightValues">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+
+
+    <!-- paramétrage ctype de carte -->
+    <string-array name="listMapsEntries">
+        <item>Normal</item>
+        <item>Satellite</item>
+        <item>Hybrid</item>
+        <item>Terrain</item>
+    </string-array>
+
+    <string-array name="listMapsValues">
+        <item>normal</item>
+        <item>satellite</item>
+        <item>hybrid</item>
+        <item>terrain</item>
+    </string-array>
+
+
+    <!-- paramétrage temps entre deux notificions -->
+    <string-array name="listDelaysNotifications">
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>3 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>45 min</item>
+        <item>60 min</item>
+    </string-array>
+
+    <string-array name="listActivitiesNames">
+        <item>Running</item>
+        <item>Cycling</item>
+        <item>Walking</item>
+        <item>Test</item>
+    </string-array>
+
+</resources>

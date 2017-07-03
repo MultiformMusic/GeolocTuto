@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#303F9F</color>
+    <color name="green">#4CAF50</color>
+    <color name="purple">#673AB7</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="orange">#e95609</color>
+    <color name="black">#000000</color>
+    <color name="gold">#ffd06b</color>
+    <color name="redClair">#e5b5b3</color>
+
+    <color name="accent_color">@color/black</color>
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="statusBarColor">@color/black</color>
+
+    <color name="background_activity">#230501</color>
+    <color name="background_cardview">#68300f</color>
+
+    <color name="settings_category_text">#326ca8</color>
+    <color name="settings_category_background">#e0e1e2</color>
+
+    <!-- pop up ajout commentaire -->
+    <color name="commentDialog">#edeaf2</color>
+    <color name="commentDialogButton">#000000</color>
+    <color name="commentDialogTitle">#000000</color>
+    <color name="commentDialogEditText">@color/blue</color>
+    <color name="popUpMenuBackground">#ffffff</color>
+
+</resources>
