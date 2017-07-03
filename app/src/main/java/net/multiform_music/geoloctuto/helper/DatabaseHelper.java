@@ -486,7 +486,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
         cursor.close();
-        // test commit stat
+
         return autoIncrement + 1;
     }
 }
