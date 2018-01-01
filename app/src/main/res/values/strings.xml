@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">GeolocTuto</string>
+    <string name="app_name">I Feel Run</string>
     <string name="title_activity_maps">Map</string>
 
-    <string name="toolbar_title">Help Me Run !! </string>
+    <string name="toolbar_title">I Feel Run</string>
 
     <string name="home_title">Select an action with \nbuttons below</string>
     <string name="home_new_run">New run</string>

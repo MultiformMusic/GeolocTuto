@@ -2,9 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "26.0.2"
     defaultConfig {
-        applicationId "net.multiform_music.geoloctuto"
+        multiDexEnabled true
+        applicationId "net.multiform_music.ifeelrun"
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
@@ -17,6 +18,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 
 }
 

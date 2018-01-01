@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">GeolocTuto</string>
+    <string name="app_name">I Feel Run</string>
     <string name="title_activity_maps">Map</string>
 
     <string name="toolbar_title">Help Me Run !! </string>
