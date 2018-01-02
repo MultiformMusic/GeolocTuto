@@ -24,17 +24,27 @@
         </android.support.v7.widget.Toolbar>
         -->
 
+
     <FrameLayout
         android:id="@+id/home_menu_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"/>
 
-    <FrameLayout
-        android:id="@+id/home_last_performance_container"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/home_menu_container"/>
+        android:background="@color/background_activity"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linear_home_last_performance_container"
+        android:layout_below="@+id/home_menu_container">
+
+        <FrameLayout
+            android:id="@+id/home_last_performance_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
 
 </RelativeLayout>
