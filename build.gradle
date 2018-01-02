@@ -22,7 +22,6 @@ allprojects {
         }
     }
 
-    buildDir = "C:/tmp/${rootProject.name}/${project.name}"
 }
 
 task clean(type: Delete) {
